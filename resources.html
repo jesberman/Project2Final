@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>
+        Financial Resources
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-calc.css">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+
+<body>
+
+    <!--********************************Experimental Navbar*******************************-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active navbar-brand">
+            <h5 style="color:aliceblue;">Midas</h3>
+        </a>
+        <a href="about.html">About</a>
+        <a href="client-survey-questions.html">Find Financial Advisors</a>
+        <a href="profile-fill-out.html">Find Clients</a>
+        <a href="resources.html">Financial Resources</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!--***************************************************************-->
+
+
+    <div class="about">
+        <title> JavaScript Loan Calculator </title>
+        <h2>
+            Please feel free to utilize these complimentary resources
+        </h2>
+        <br>
+        <h4>
+            Loan Calculator
+        </h4>
+        <br>
+        <table>
+            <tr>
+                <th>Enter Loan Data:</th>
+                <td></td>
+                <!--
+                <th>Loan Balance, Cumulative Equity, and Interest Payments</th>
+                -->
+            </tr>
+            <tr>
+                <td>Amount of the loan ($):</td>
+                <td>
+                    <input id="amount" onchange="calculate();">
+                </td>
+                <td rowspan=8>
+                    <!--
+                    <canvas id="graph" width="400" height="250"></canvas>
+                    -->
+                </td>
+            </tr>
+            <tr>
+                <td>Annual interest (%):</td>
+                <td>
+                    <input id="apr" onchange="calculate();">
+                </td>
+            </tr>
+            <tr>
+                <td>Repayment period (years):</td>
+                <td>
+                    <input id="years" onchange="calculate();">
+                </td>
+
+                <tr>
+
+                    <td>Zipcode (to find lenders):</td>
+                    <td>
+                        <input id="zipcode" onchange="calculate();">
+                    </td>
+
+                    <tr>
+                        <th>Approximate Payments:</th>
+                        <!--
+                        <td>
+                            <button onclick="calculate();">Calculate</button>
+                        </td>
+                        -->
+
+                    </tr>
+                    <tr>
+                        <td>Monthly payment:</td>
+                        <td>$
+                            <span class="output" id="payment"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Total payment:</td>
+                        <td>$
+                            <span class="output" id="total"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Total interest:</td>
+                        <td>$
+                            <span class="output" id="totalinterest"></span>
+                        </td>
+                    </tr>
+                    <p>
+                        Loan Balance, Cumulative Equity, and Interest Payments
+                    </p>
+                    <canvas id="graph" width="300" height="250"></canvas>
+
+                    <!--
+                    <tr>
+                        <th>Sponsors:</th>
+                        <td colspan=2>
+                            Apply for your loan with one of these fine lenders:
+                            <div id="lenders"></div>
+                        </td>
+                    </tr>
+                    -->
+        </table>
+    </div>
+
+    <hr class="my-4">
+    <div class="about">
+        <h4>
+            Finance News Sites
+        </h4>
+        <br>
+        <!--
+        <table style="width: 90vw;">
+            <tr>
+                <th>
+                    <h5>
+                        CNBC
+                    </h5>
+                </th>
+
+                <th>
+                    <h5>
+                        Reuters
+                    </h5>
+                </th>
+
+                <th>
+                    <h5>
+                        Forbes
+                    </h5>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://www.cnbc.com/finance/">
+                        <img src="assets/images/cnbc.jpeg" style="width: 200px;">
+                    </a>
+                </td>
+
+                <td>
+                    <a href="https://www.reuters.com/finance">
+                        <img src="assets/images/reuters.jpeg" style="width: 200px;">
+                    </a>
+
+                </td>
+
+                <td>
+                    <a href="https://www.forbes.com/personal-finance/#5a202984ebb0">
+                        <img src="assets/images/forbes.jpeg" style="width: 200px;">
+                    </a>
+                </td>
+
+            </tr>
+        </table>
+        -->
+
+    </div>
+
+    <div>
+        <div style="width: 90vw;">
+            <div class="about">
+                <h5>
+                    CNBC
+                </h5>
+                <a href="https://www.cnbc.com/finance/">
+                    <img src="assets/images/cnbc.jpeg" style="width: 200px;">
+                </a>
+            </div>
+
+            <br>
+            <div class="about">
+                <h5>
+                    Reuters
+                </h5>
+                <a href="https://www.reuters.com/finance">
+                    <img src="assets/images/reuters.jpeg" style="width: 200px;">
+                </a>
+            </div>
+
+            <br>
+            <div class="about">
+                <h5>
+                    Forbes
+                </h5>
+                <a href="https://www.forbes.com/personal-finance/#5a202984ebb0">
+                    <img src="assets/images/forbes.jpeg" style="width: 200px;">
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <footer id="foot3" class="page-footer font-small cyan darken-3">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="pin-ic">
+                            <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+        <div class="col-md-6 mb-4">
+
+            <form class="input-group">
+                <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-sm btn-outline-white" type="button">Sign up</button>
+                </div>
+            </form>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Midas.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="assets/javascript/logic.js">
+
+    </script>
+
+    <script src="assets/javascript/calc.js">
+
+    </script>
+</body>
+
+
+</html>
