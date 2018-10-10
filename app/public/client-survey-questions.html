@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>
+        Client Data Entry
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+
+
+
+
+<body>
+
+    <!--********************************Experimental Navbar*******************************-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active navbar-brand">
+            <h5 style="color:aliceblue;">Midas</h3>
+        </a>
+        <a href="about.html">About</a>
+        <a href="client-survey-questions.html">Find Financial Advisors</a>
+        <a href="profile-fill-out.html">Find Clients</a>
+        <a href="resources.html">Financial Resources</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!--***************************************************************-->
+
+    <h2 class="about">
+        To help us find your ideal advisor, please answer the following quesitons
+        </h1>
+
+
+        <!--*****************************************Question 1***************************************************** -->
+        <div id="q1" class="card text-white bg-info mb-3" style="max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">1. Please enter your zip code</h4>
+            </div>
+            <div class="card-body">
+                <input type="text" class="form-control" name="answers-1" placeholder="Ex: 10001" id="client_zip">
+            </div>
+            <button type="submit" id="next1" class="btn btn-primary" style="width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+        </div>
+        <!--************************************************************************************************************* -->
+
+
+
+
+
+        <!--*****************************************Question 2***************************************************** -->
+        <div id="q2" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">2. When would you like to retire?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-2" id="q2-a1" value="1-4"> 1-4 years
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-2" id="q2-a2" value="5-9"> 5-9 years
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-2" id="q2-a3" value="10-19"> 10-19 years
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-2" id="q2-a4" value="20-29"> 20-29 years
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-2" id="q2-a5" value="30+"> 30+ years
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" Autocheck="false" class="form-check-input" name="answers-2" id="q2-a6" value="retired"> Already retired
+                    </label>
+                </div>
+
+                <button type="submit" id="next2" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                    Next
+                </button>
+
+               
+            </div>
+        </div>
+        <!--************************************************************************************************************* -->
+
+
+        <!--*****************************************Question 3***************************************************** -->
+        <div id="q3" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">3. How do you currently manage your money?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a1" value="Self Manage"> I mange my own investments
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a2" value="Retirement Plans"> I use retirement plans (such as a 401(k), Roth IRA, IRA)
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a3" value="Robo-advisor"> I use a robo-advisor
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a4" value="Financial Advisor"> I work with a financial advisor
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a5" value="No Management"> None of the above
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a6" value="Retired"> Already retired
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next3" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+
+        <!--*****************************************Question 4***************************************************** -->
+        <div id="q4" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">4. Would you like advice on managing your finances?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-4" id="q4-a1" value="True"> Yes
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-4" id="q4-a2" value="False"> Not Necessary
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next4" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 5***************************************************** -->
+        <div id="q5" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">5. Would you like an assessment of your retirement readiness?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-5" id="q5-a1" value="True"> Yes
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-5" id="q5-a2" value="True"> Nice to have
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-5" id="q5-a3" value="False"> Not important
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next5" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 6***************************************************** -->
+        <div id="q6" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">6. How comfortable are you with investing?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-6" id="q6-a1" value="Comfortable"> Very comfortable
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-6" id="q6-a2" value="Comfortable"> Somewhat comfortable
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-6" id="q6-a3" value="Not Comfortable"> Not comfortable at all
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next6" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 7***************************************************** -->
+        <div id="q7" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">7. Why are you looking to retain an advisor?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-7" id="q7-a1" value="Retirement"> Retiring soon
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-7" id="q7-a2" value="Investment Advice"> Investment advice
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-7" id="q7-a3" value="Other"> Other
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next7" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 8***************************************************** -->
+        <div id="q8" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">8. Are you married?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-8" id="q8-a1" value="Yes"> Yes
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-8" id="q8-a2" value="No"> No
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next8" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 9***************************************************** -->
+        <div id="q9" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">9. Do you own your home?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-9" id="q9-a1" value="Yes"> Yes
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-9" id="q9-a2" value="No"> No
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next9" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 10***************************************************** -->
+        <div id="q10" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">10. Do you currently have children under 18?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-10" id="q10-a1" value="No"> No
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-10" id="q10-a2" value="Yes"> Yes, 1
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-10" id="q10-a3" value="Yes"> Yes, 2
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-10" id="q10-a4" value="Yes"> Yes, 3 or more
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next10" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 11***************************************************** -->
+        <div id="q11" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">11. Do you own a business?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-11" id="q11-a1" value="Yes"> Yes
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-11" id="q11-a2" value="No"> No
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next11" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+
+
+        <!--*****************************************Question 12***************************************************** -->
+        <div id="q12" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">12. If the value of your investments crashed today, what would you do?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-12" id="q12-a1" value="Invest"> Invest More
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-12" id="q12-a2" value="Hold"> Do nothing
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-12" id="q12-a3" value="Sell"> Sell to cut losses
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next12" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+
+        <!--*****************************************Question 13***************************************************** -->
+        <div id="q13" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">13. How important is it for your financial advisor to have tax expertise?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-13" id="q13-a1" value="True"> Must have
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-13" id="q13-a2" value="True"> Nice to have
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-13" id="q13-a3" value="False"> Not important
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next13" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+
+        <!--*****************************************Question 14***************************************************** -->
+        <div id="q14" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">14. How important is it for your financial advisor to have estate planning expertise?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-14" id="q14-a1" value="True"> Must have
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-14" id="q14-a2" value="True"> Nice to have
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-14" id="q14-a3" value="False"> Not important
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next14" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+
+        <!--*****************************************Question 15***************************************************** -->
+        <div id="q15" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">15. Do you currently have a financial advisor?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-15" id="q15-a1" value="True"> Yes
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-15" id="q15-a2" value="False"> No
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next15" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+
+        <!--*****************************************Question 16***************************************************** -->
+        <div id="q16" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title"> 16. Do you need your financial advisor to be in your immediate area?</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-16" id="q16-a1" value="True"> Yes
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-16" id="q16-a2" value="False"> No, I am comfortable working by phone or video-conference
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next16" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+
+        <!--*****************************************Question 17***************************************************** -->
+        <div id="q17" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">17. Please estimate your current household income.</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a1" value="$40k"> Less than $40,000
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a2" value="$40-$75k"> $40,000-$74,999
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a3" value="$75k-$99k"> $75,000-$99,999
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a4" value="$100k-$149k"> $100,000-$149,999
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a5" value="$150k-$249k"> $150,000-$249,999
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a6" value="$250k+"> Over $250,000
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next17" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+        
+        <!--*****************************************Question 18***************************************************** -->
+        <div id="q18" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">18. Please estimate your readily investable assets.</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a1" value="$25k"> Less than $25,000
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a2" value="$25k-$99k"> $25,000-$99,999
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a3" value="$100k-$249k"> $100,000-$249,999
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a4" value="$250k-$999k"> $250,000-$999,999
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a5" value="$1M-$4M"> $1,000,000-$4,999,999
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a6" value="$5M+"> Over $5,000,000
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next18" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 19***************************************************** -->
+        <div id="q19" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">19. Please estimate your current monthly savings.</h4>
+            </div>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a1" value="$99"> Less than $100
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a2" value="$100-$249"> $100-$249
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a3" value="$250-$499"> $250-$499
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a4" value="$500-$999"> $500-$999
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a5" value="$1000-$1,999"> $1,000-$1,999
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a6" value="$2000"> Over $2,000
+                    </label>
+                </div>
+
+            </div>
+
+            <button type="submit" id="next19" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 20***************************************************** -->
+        <div id="q20" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">20. Is there anything else you would like your matches to know?</h4>
+            </div>
+            <div class="card-body">
+                <input type="text" class="form-control" placeholder="" name="answers-20"id="client_bio">
+            </div>
+            <button type="submit" id="next20" class="btn btn-primary" style="width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 21***************************************************** -->
+        <div id="q21" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">21. Who should we reach out to?</h4>
+            </div>
+            <div class="card-body">
+                <input type="text" class="form-control" placeholder="" name="answers-21" id="client_name">
+            </div>
+            <button type="submit" id="next21" class="btn btn-primary" style="width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+        </div>
+        <!--************************************************************************************************************* -->
+
+
+        <!--*****************************************Question 22***************************************************** -->
+        <div id="q22" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">22. What is your email address?</h4>
+            </div>
+            <div class="card-body">
+                <input type="text" class="form-control" name="answers-22" placeholder="" id="client_email">
+            </div>
+            <button type="submit" id="next22" class="btn btn-primary" style="width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Next
+            </button>
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <!--*****************************************Question 23***************************************************** -->
+        <div id="q23" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+            <div class="card-header">
+                <h4 class="card-title">23. What is your phone number?</h4>
+            </div>
+            <div class="card-body">
+                <input type="text" class="form-control" name="answers-23" placeholder="" id="client_phone">
+            </div>
+            <button type="submit" id="next23" class="btn btn-primary" style="width: 50vw; margin-left: 15vw; margin-right: 15vw;">
+                Submit
+            </button>
+        </div>
+        <!--************************************************************************************************************* -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Footer -->
+        <footer id="foot3" class="page-footer font-small cyan darken-3">
+
+            <!-- Footer Elements -->
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12 py-5">
+                        <div class="mb-5 flex-center">
+
+                            <!-- Facebook -->
+                            <a class="fb-ic">
+                                <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!-- Twitter -->
+                            <a class="tw-ic">
+                                <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!-- Google +-->
+                            <a class="gplus-ic">
+                                <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!--Linkedin -->
+                            <a class="li-ic">
+                                <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!--Instagram-->
+                            <a class="ins-ic">
+                                <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!--Pinterest-->
+                            <a class="pin-ic">
+                                <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+            <!-- Footer Elements -->
+            <div class="col-md-6 mb-4">
+
+                <form class="input-group">
+                    <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-sm btn-outline-white" type="button">Sign up</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Midas.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+
+        <script src="assets/javascript/logic.js">
+
+        </script>
+
+        <script src="assets/javascript/client.js" type="text/javascript"></script>
+
+      
+
+</body>
+
+
+</html>
