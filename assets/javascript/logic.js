@@ -1,3 +1,12 @@
+
+
+
+$(document).ready(function(){
+    alert("Please note: This is not meant as a fully functioning website with back-end capabilities.  This is merely meant as an example of the developer's ability to create a multi-page, professional-looking front-end site.");
+  });
+  
+
+
 /* --------------------------Experimental Navbar ----------------------------*/
 function myFunction() {
     var x = document.getElementById("myTopnav");
