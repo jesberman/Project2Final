@@ -1,5 +1,4 @@
-# Project2Final
+# Bootstrap Financial Advisor Site
 
-This was a group project, designed to serve as a platform that would connect financial advisors with potential clients.  The ideas was that financial advisors and clients would be able to fill out separate profiles.  Then, the website would provide recommendations for certain adivsors to be matched to certain clients, based on the profiles that each  person would fill out.
+This was a personal project to see if I could develop a professional-looking front-end for a multi-page site geared towards providing financial advice for customers.  Please note that this is not meant to be a full site with a functioning back-end; the front end look and feel of the site was the sole focus of the project.
 
-While the front-end works effectively, the back-end, unfortunately, was never able to be fully implemented.  I apologize that this issue was not resolved.
